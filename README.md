@@ -35,6 +35,8 @@ Then:
 sudo systemctl enable coturn
 sudo systemctl start coturn
 ```
+Then install NGINX. You can read tons of docs about these steps.
+One is at the following [link](https://hostnextra.com/learn/tutorials/install-certbot-on-ubuntu-with-nginx)
 
 ### Setup NGINX (WSS Reverse Proxy)
 
