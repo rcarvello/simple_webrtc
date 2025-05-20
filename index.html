@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WebRTC Video Chat</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body class="bg-light text-center">
+  <div class="container mt-5">
+    <h2>Peer-to-Peer Video Chat</h2>
+    <div id="myId" class="mb-3 text-primary fw-bold"></div>
+    <input id="peerIdInput" class="form-control mb-3" placeholder="Enter peer name to call" />
+    <div class="row mt-4">
+      <div class="col">
+        <video id="localVideo" autoplay playsinline muted class="border border-primary rounded w-100"></video>
+      </div>
+      <div class="col">
+        <video id="remoteVideo" autoplay playsinline class="border border-success rounded w-100"></video>
+      </div>
+    </div>
+    <div class="mt-4">
+      <button id="startButton" class="btn btn-primary">Start</button>
+      <button id="callButton" class="btn btn-success">Call</button>
+      <button id="hangupButton" class="btn btn-danger">Hang Up</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
