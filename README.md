@@ -74,7 +74,7 @@ node server.js
 
 ---
 
-## 👥 Use Case Example
+## Use Case Example
 
 ### User 1 (Alice):
 - Opens the app at https://localhost:443
@@ -91,3 +91,14 @@ node server.js
 Video call starts.
 
 ---
+
+The diagram below describes a canonical communication flow
+
+![alt text](webrtc_diagram.png "Title")
+
+| Component        | Role                              | Technology Example   |
+|------------------|-----------------------------------|-----------------------|
+| STUN server      | NAT traversal                     | Coturn (`stun:` URL) |
+| Signaling server | Exchange session info             | WebSocket, HTTP       |
+| WebRTC           | Real-time peer-to-peer media/data | Built into browser    |
+
