@@ -91,8 +91,7 @@ node server.js
 Video call starts.
 
 ---
-
-The diagram below describes a canonical communication flow
+The diagram below describes the standard  communication flow between two peers
 
 ![alt text](webrtc_diagram.png "Title")
 
